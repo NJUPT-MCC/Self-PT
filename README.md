@@ -1,6 +1,4 @@
-# Self-PT
-Self-PT: Adaptive Self-Prompt Tuning for Low-Resource Visual Question Answering (ACM MM 2023)
-
+# Self-PT: Adaptive Self-Prompt Tuning for Low-Resource Visual Question Answering (ACM MM 2023)
 This repository contains the implementation of Self-PT described in the paper.
 Code is based on [FewVLM](https://github.com/woojeongjin/FewVLM) and [VL-adapter](https://github.com/ylsung/VL_adapter)
 
