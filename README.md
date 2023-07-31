@@ -4,6 +4,9 @@ Self-PT: Adaptive Self-Prompt Tuning for Low-Resource Visual Question Answering 
 This repository contains the implementation of Self-PT described in the paper.
 Code is based on [FewVLM](https://github.com/woojeongjin/FewVLM) and [VL-adapter](https://github.com/ylsung/VL_adapter)
 
+## Updates
+I am currently **in the process of updating my GitHub repository**, but it is not yet complete. I wanted to let everyone know to expect the new changes soon. Thank you for your patience and stay tuned for updates!
+
 ## Installation
 
 ```bash
