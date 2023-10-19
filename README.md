@@ -16,6 +16,8 @@ ACM Multimedia 2023
 ## Adaptive Self-Prompt Tuning
 we propose a prompt tuning method for low-resource VQA named Adaptive Self-Prompt Tuning (Self-PT). Specifically, Self-PT utilizes instance-level multimodal representations as conditions to obtain context-aware prompts, avoiding implicit correlations between static prompts and seen answers. Moreover, we use hyper-networks and low-rank parameter factorization to reduce the trainable parameters of Self-PT while maintaining the prompt embedding capacity.
 
+<img src="framework.pdf" width="800"> 
+
 ## Installation
 
 ```bash
