@@ -1,15 +1,20 @@
 # Self-PT: Adaptive Self-Prompt Tuning for Low-Resource Visual Question Answering
+
 Official code and models for the ACM MM 2023 paper: 
-[Self-PT: Adaptive Self-Prompt Tuning for Low-Resource Visual Question Answering](https://doi.org/10.1145/3581783.3612222)
+
+[**Self-PT: Adaptive Self-Prompt Tuning for Low-Resource Visual Question Answering**](https://doi.org/10.1145/3581783.3612222)
+
 Bowen Yuan, Sisi You, Bing-Kun Bao*
+
 ACM Multimedia 2023
-Self-PT is a context-aware prompt tuning method for low-resource VQA, which can adapt large vision-language pretraining models to VQA tasks with only **~1M parameters** and **16 samples**! If you have any questions, please feel free to raise an issue or email yuanbw0925@gmail.com.
 
-
-
+**Self-PT** is a context-aware prompt tuning method for low-resource VQA, which can adapt large vision-language pretraining models to VQA tasks with only **~1M parameters** and **16 training samples**! If you have any questions, please feel free to raise an issue or email <yuanbw0925@gmail.com>.
 
 ## Updates
 [23.10.19] We have uploaded the code of Self-PT! 
+
+## Adaptive Self-Prompt Tuning
+we propose a prompt tuning method for low-resource VQA named Adaptive Self-Prompt Tuning (Self-PT). Specifically, Self-PT utilizes instance-level multimodal representations as conditions to obtain context-aware prompts, avoiding implicit correlations between static prompts and seen answers. Moreover, we use hyper-networks and low-rank parameter factorization to reduce the trainable parameters of Self-PT while maintaining the prompt embedding capacity.
 
 ## Installation
 
@@ -80,7 +85,7 @@ pip install -r requirements.txt
 
 ## Low-Resource Visual Question Answering
 
-All commands are runnable on a single GPU. We provide the examples to use Self-PT for low-resource VQA when the number of training samples is 16.
+All commands are runnable on a single GPU. We provide examples of using Self-PT for low-resource VQA when the number of training samples is 16.
 
 ### VQA
 
@@ -117,14 +122,18 @@ Some important command line arguments are listed as follows:
 | `--prompt_type`                  | 'hyper_phm_new'              | choose the prompt tuning methods: 'orip' for general prompt tuning, 'hyper_phm_new' for Self-PT |                 |
 | `--prompt_cross`                 | False                        | set prompt tuning methods in cross-attention                 | default=False   |
 
+
 Code is based on [FewVLM](https://github.com/woojeongjin/FewVLM) and [VL-adapter](https://github.com/ylsung/VL_adapter), thanks for their contributions.
 
 ## Citation
+
 If you find our work useful in your research, please consider citing:
 
+```
 @article{self_pt,
   title={Self-PT: Adaptive Self-Prompt Tuning for Low-Resource Visual Question Answering},
   author={Yuan, Bowen and You, Sisi and Bao, Bing-Kun},
   journal={ACM Multimedia},
   year={2023}
 }
+```
