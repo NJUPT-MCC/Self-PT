@@ -97,20 +97,16 @@ bash scripts/GQA.sh
 
 Some important command line arguments are listed as follows:
 
-| Args                             | Values                                                     | Descriptions                      | Notes                                                        |
-| ------------------------------- | ---------------------------------------------------------- | -------------------------------- | ------------------------------------------------------------ |
-| `--load`                        | path for trained checkpoints                               | load a checkpoint                |                                                              |                                            |
-| `--subsample`                   | store_true                                                 | Subsample train and val sets for low-resource setting  |                                           |
-| `--num_data`                    | {16, 32, 64, 100, 500, 1000}                                             | Number of subsamples for train and val sets | default=16                                       |
-|`--pre_seq_len`| 5 | prompt length  | default=5 |
-| `--prompt_index_dim` | 2 | the width of weight bank ||
-| `--prompt_reduction_factor` | 6 | the feature dimension / the bottleneck dimension | default=768/128 | |
-| `--prompt_phm_rank` | 8 | the rank of parameter factorization | |
-| `--prompt_hypercomplex_division` | 4 | the number of summations of Kronecker product | |
-| `--prompt_input_type` | 'cls' | choose the conditions for Self-PT: 'cls' for [cls] token, 'mean' for mean pooling, 'max' for max pooling | |
-| `--prompt_type` | 'hyper_phm_new' | choose the prompt tuning methods: 'orip' for general prompt tuning, 'hyper_phm_new' for Self-PT | |
-|`--prompt_cross` | False | set prompt tuning methods in cross-attention | default=False |
-|`--add_adapter_cross_attn`| False | set adapters in self-attention | default=False  |
-|`--add_adapter_cross_attn`| False | set adapters in cross-attention | default=False  |
-| `--prompt_encoder` | True | set prompt tuning methods in encoder | default=True |
-| `--prompt_decoder` | True | set prompt tuning methods in decoder | default=True |
+| Args                             | Values                       | Descriptions                                                 | Notes           |
+| -------------------------------- | ---------------------------- | ------------------------------------------------------------ | --------------- |
+| `--load`                         | path for trained checkpoints | load a checkpoint                                            |                 |
+| `--subsample`                    | store_true                   | Subsample train and val sets for low-resource setting        |                 |
+| `--num_data`                     | {16, 32, 64, 100, 500, 1000} | Number of subsamples for train and val sets                  | default=16      |
+| `--pre_seq_len`                  | 5                            | prompt length                                                | default=5       |
+| `--prompt_index_dim`             | 2                            | the width of weight bank                                     |                 |
+| `--prompt_reduction_factor`      | 6                            | the feature dimension / the bottleneck dimension             | default=768/128 |
+| `--prompt_phm_rank`              | 8                            | the rank of parameter factorization                          |                 |
+| `--prompt_hypercomplex_division` | 4                            | the number of summations of Kronecker product                |                 |
+| `--prompt_input_type`            | 'cls'                        | choose the conditions for Self-PT: 'cls' for [cls] token, 'mean' for mean pooling, 'max' for max pooling |                 |
+| `--prompt_type`                  | 'hyper_phm_new'              | choose the prompt tuning methods: 'orip' for general prompt tuning, 'hyper_phm_new' for Self-PT |                 |
+| `--prompt_cross`                 | False                        | set prompt tuning methods in cross-attention                 | default=False   |
