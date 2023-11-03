@@ -132,10 +132,11 @@ Code is based on [FewVLM](https://github.com/woojeongjin/FewVLM) and [VL-adapter
 If you find our work useful in your research, please consider citing:
 
 ```
-@article{self_pt,
+@inproceedings{yuan2023self,
   title={Self-PT: Adaptive Self-Prompt Tuning for Low-Resource Visual Question Answering},
   author={Yuan, Bowen and You, Sisi and Bao, Bing-Kun},
-  journal={ACM Multimedia},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={5089--5098},
   year={2023}
 }
 ```
