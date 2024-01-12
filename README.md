@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ## Datasets
 
-- The VQA and GQA datasets can be downloaded from [VQA&GQA](https://nlp.cs.unc.edu/data/lxmert_data/) for image features and annotations.
+- The VQA and GQA datasets can be downloaded from [VQA&GQA](https://nlp.cs.unc.edu/data/lxmert_data/) for image features and annotations. Following [VL-T5](https://github.com/j-min/VL-T5/tree/main/feature_extraction) to preprocess the image features.
 
 - The OK-VQA dataset can be downloaded from [OK-VQA_a](https://drive.google.com/drive/folders/1T8x5O3sZp83_x9XX2Yg0HgCP8P_Bh8KD?usp=sharing) for annotations and [OK-VQA_f](https://nlp.cs.unc.edu/data/lxmert_data/) for image features.
 
